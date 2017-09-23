@@ -5,7 +5,7 @@ let _ = require('underscore');
 
 // range for the first and last digits to read
 let FIRST_ODD_DIGIT = parseInt(process.argv[process.argv.length - 2]) || 1;
-let LAST_ODD_DIGIT = parseInt(process.argv[process.argv.length - 1]) || 10000;
+let LAST_ODD_DIGIT = parseInt(process.argv[process.argv.length - 1]) || 31415;
 
 // request object (data hosted by mit)
 // needs seperate init to expose req to be later aborted
