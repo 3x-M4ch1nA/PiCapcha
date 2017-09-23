@@ -21,7 +21,7 @@ req.on('error', e => console.log(e))
 
 	res.on('data', chunk => {
 		// get all of the odds in the chunk
-		let chunkOdds = _.filter('' + chunk, c => parseInt(c) % 2 === 1);
+		let chunkOdds = _.filter('' + chunk, c => parseInt(c) % 2 === 1).join('');
 
 		// abort request if we have all needed data
 		if (data.length + chunkOdds.length > LAST_ODD_DIGIT) {
