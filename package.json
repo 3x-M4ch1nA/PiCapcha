@@ -2,5 +2,8 @@
   "dependencies": {
     "https": "^1.0.0",
     "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1"
   }
 }
